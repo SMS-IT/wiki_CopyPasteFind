@@ -2,7 +2,7 @@
 
 ## Установка
 
-### Добавьте плагин в LocalSettings.json
+### Добавьте плагин в LocalSettings.php
 ```
 wfLoadExtension( 'CopyPasteFind' );
 
