@@ -1,0 +1,42 @@
+{
+  "name": "CopyPasteFind",
+  "author": "sms-it",
+  "version": "1.0.0",
+  "url": "http://sms-it.ru",
+  "license-name": "GPL-2.0+",
+  "type": "parserhook",
+  "MessagesDirs": {
+    "CopyPasteFind": [
+      "i18n"
+    ]
+  },
+  "AutoloadClasses": {
+    "CopyPasteFindHooks": "CopyPasteFind.php"
+  },
+  "Hooks": {
+    "BeforePageDisplay": [
+      "CopyPasteFindHooks::addHTMLHeader"
+    ],
+    "OutputPageBeforeHTML": [
+      "CopyPasteFindHooks::onOutputPageBeforeHTML"
+    ],
+    "SkinTemplateNavigation": [
+      "CopyPasteFindHooks::onSkinTemplateNavigation"
+    ]
+  },
+  "ResourceModules": {
+    "ext.copypastefind": {
+      "scripts": [
+        "modules/ext.copypastefind.js"
+      ],
+      "styles": [
+        "modules/ext.copypastefind.css"
+      ]
+    }
+  },
+  "ResourceFileModulePaths": {
+    "localBasePath": "",
+    "remoteExtPath": "CopyPasteFind"
+  },
+  "manifest_version": 1
+}
